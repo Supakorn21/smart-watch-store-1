@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Arial", Arial, sans-serif;
+}
+
+nav {
+  height: 80px;
+  background-color: #ea5b3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  margin: 0px auto;
+  padding: 24px;
+  justify-content: center;
+}
+
+.watch {
+  display: inline-block;
+}
+
+img {
+  max-height: 300px;
+  width: 300px;
+}
+
+aside {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.title {
+  padding: 0 24px;
+}
+
+.title h1 {
+  font-size: 1.5em;
+}
+
+.title p {
+  color: rgb(116, 109, 109);
+}
+.color {
+  padding: 0 24px;
+}
+.boxes {
+  display: grid;
+  gap: 4px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.box {
+  height: 36px;
+  width: 47px;
+
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.black {
+  background-color: black;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.purple {
+  background-color: #565681;
+}
+
+.orange {
+  background-color: #ca3d22;
+}
+
+.buttons {
+  display: flex;
+  height: 36px;
+  gap: 4px;
+  margin-top: 20px;
+  padding: 0 24px;
+}
+
+.button {
+  cursor: pointer;
+  height: 40px;
+  width: 150px;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+}
+.add-to-cart {
+  background-color: #efefef;
+}
+
+.buy {
+  background-color: #e95a3e;
+  color: white;
+}
+
+@media (max-width: 610px) {
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+  .watch {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 300px) {
+  .boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 360px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+}
